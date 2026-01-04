@@ -88,7 +88,7 @@ def initHeaders():
 
 def handleStatusCodes(status_code):
 	global request_counter
-	sys.stdout.write("\r%i \033[1;32mrequests\033[0m" % request_counter)
+	sys.stdout.write("\033[32mr%i \033[34mrequests\033[0m" % request_counter)
 	sys.stdout.flush()
 	print("\033[1;33m::\033[1;36m[" +(url)+ "]\033[1;33m:\033[1;37m:\033[0;31m::\033[0;33mNu\033[1;36msaibah\033[0m")
 	sys.stdout.flush()
